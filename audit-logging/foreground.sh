@@ -26,6 +26,6 @@ show_progress()
 }
 
 show_progress
-sleep 1
-clear
-printf "\033[0;32mYour Interactive Bash Terminal.\033[0m\n"
+# sleep 1
+# clear
+# printf "\033[0;32mYour Interactive Bash Terminal.\033[0m\n"
