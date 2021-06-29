@@ -7,6 +7,7 @@ show_progress()
   local spinstr='\|/-'
   local temp
   echo -n "Starting up Cassandra..."
+  echo off
   while true; do 
     # sudo grep -i "done" /opt/katacoda-background-finished &> /dev/null
     sudo grep -i "Startup complete" /var/log/cassandra/system.log &> /dev/null
@@ -20,6 +21,7 @@ show_progress()
       break
     fi
   done
+  echo on
   clear
   printf "    \b\b\b\b"
   echo ""
@@ -27,6 +29,4 @@ show_progress()
 }
 
 show_progress
-# sleep 1
-# clear
-# printf "\033[0;32mYour Interactive Bash Terminal.\033[0m\n"
+
