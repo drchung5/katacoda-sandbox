@@ -33,6 +33,12 @@ Create the `music` keyspace.
 create KEYSPACE music WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 ```{{execute}}
 
+Use the `music` keyspace.
+
+```
+use music;
+```{{execute}}
+
 Create the `songs` table.
 
 ```
