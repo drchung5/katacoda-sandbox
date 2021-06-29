@@ -20,6 +20,7 @@ show_progress()
       break
     fi
   done
+  clear
   printf "    \b\b\b\b"
   echo ""
   echo "Cassandra has started!"
