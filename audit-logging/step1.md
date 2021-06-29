@@ -14,7 +14,7 @@ nodetool status
 <span style="color:teal">**Status:**</span> 
 Look at the first two characters of the status. 
 Each character has an individual meaning. 
-The sequence `UN` means the node's status is `Up` and state is `Normal`
+The sequence `UN` means the node's status is `Up` and state is `Normal`.
 </p>
 ---
 

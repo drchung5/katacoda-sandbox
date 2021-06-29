@@ -43,3 +43,11 @@ The audit log is stored in binary format so you will use *auditlogviewer* to see
 ```
 auditlogviewer /var/log/cassandra/audit
 ```{{execute}}
+---
+<p>
+<span style="color:teal">**Note:**</span> 
+Ignore any Java warnings you may see. 
+The log output should contain the `INSERT`, `UPDATE` and `SELECT` commands you entered along with a timestamp, username and more.
+</p>
+---
+![Daniel Log](./assets/daniel-log.png)
