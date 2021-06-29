@@ -17,8 +17,8 @@ rm apache-cassandra-4.0-rc1-bin.tar.gz
 echo 'PATH="$PATH:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"' >> .bashrc
 export PATH="$PATH:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"
 source .bashrc
-# /usr/share/cassandra/bin/cassandra -R
-# while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do
-#    sleep 15
-# done
+/usr/share/cassandra/bin/cassandra -R
+while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do
+   sleep 15
+done
 echo "done" >> /opt/katacoda-background-finished
