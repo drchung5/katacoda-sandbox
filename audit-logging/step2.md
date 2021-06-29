@@ -4,7 +4,7 @@ Finally you will view the audit log.
 
 Use *nodetool* and enable audit logging.
 ```
-nodetool enableauditlog;
+nodetool enableauditlog
 ```{{execute}}
 
 Start the CQL Shell again.
