@@ -49,3 +49,8 @@ CREATE TABLE songs (
    PRIMARY KEY ((artist), title)
 );
 ```{{execute}}
+
+Type `exit` to close *cqlsh*.
+```
+exit
+```{{execute}}
