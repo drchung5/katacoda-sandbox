@@ -8,7 +8,8 @@ show_progress()
   local temp
   echo -n "Starting up Cassandra..."
   while true; do 
-    sudo grep -i "done" /opt/katacoda-background-finished &> /dev/null
+    # sudo grep -i "done" /opt/katacoda-background-finished &> /dev/null
+    sudo grep -i "Startup complete" /var/log/cassandra/system.log &> /dev/null
     if [[ "$?" -ne 0 ]]; then     
       temp="${spinstr#?}"
       printf " [%c]  " "${spinstr}"
@@ -19,12 +20,10 @@ show_progress()
       break
     fi
   done
+  clear
   printf "    \b\b\b\b"
   echo ""
   echo "Cassandra has started!"
 }
 
 show_progress
-sleep 1
-clear
-printf "\033[0;32mYour Interactive Bash Terminal.\033[0m\n"
