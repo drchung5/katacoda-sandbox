@@ -1,4 +1,27 @@
-# #!/bin/bash
+#!/bin/bash
+
+echo "deb http://downloads.apache.org/cassandra/debian 40x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+deb http://downloads.apache.org/cassandra/debian 40x main
+
+curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
+
+sudo apt-get update
+
+sudo apt-get install cassandra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # export JAVA_HOME="/usr/lib/jvm/default-java"
 # wget https://archive.apache.org/dist/cassandra/4.0-rc1/apache-cassandra-4.0-rc1-bin.tar.gz
 # tar xzf apache-cassandra-4.0-rc1-bin.tar.gz
@@ -22,3 +45,4 @@
 #    sleep 15
 # done
 # echo "done" >> /opt/katacoda-background-finished
+
