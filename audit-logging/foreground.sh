@@ -1,2 +1,2 @@
-#!/bin/bash
-sleep 8; wait.sh; source .bashrc
+# #!/bin/bash
+# sleep 8; wait.sh; source .bashrc
