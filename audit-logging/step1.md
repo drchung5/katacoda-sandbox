@@ -1,5 +1,3 @@
-Setup
-
 In this step you will verify that Cassandra has been installed and is running as a service.
 Next, you will connect using *cqlsh* and create a keyspace and table.
 

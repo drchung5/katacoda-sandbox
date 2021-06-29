@@ -11,11 +11,11 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Setup",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Enable Audit Logging",
         "text": "step2.md"
       },
       {
