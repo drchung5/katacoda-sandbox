@@ -1,7 +1,7 @@
 {
   "title": "Audit Logging",
   "description": "New Features in Cassandra 4",
-  "difficulty": "Beginner",
+  "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
     "assets": {
@@ -11,43 +11,43 @@
     },
     "steps": [
       {
-        "title": "CQL",
+        "title": "Step 1",
         "text": "step1.md"
       },
       {
-        "title": "Start the CQL shell",
+        "title": "Step 2",
         "text": "step2.md"
       },
       {
-        "title": "Create a keyspace",
+        "title": "Step 3",
         "text": "step3.md"
       },
       {
-        "title": "Set a working keyspace",
+        "title": "Step 4",
         "text": "step4.md"
       },
       {
-        "title": "Create a table",
+        "title": "Step 5",
         "text": "step5.md"
       },
       {
-        "title": "Insert a row",
+        "title": "Step 6",
         "text": "step6.md"
       },
       {
-        "title": "Retrieve a row",
+        "title": "Step 7",
         "text": "step7.md"
       },
       {
-        "title": "Update a row",
+        "title": "Step 8",
         "text": "step8.md"
       },
       {
-        "title": "Delete a row",
+        "title": "Step 9",
         "text": "step9.md"
       },
       {
-        "title": "CQL vs. SQL",
+        "title": "Step 10",
         "text": "step10.md"
       },      
       {
