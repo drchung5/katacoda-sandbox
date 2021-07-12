@@ -1,4 +1,4 @@
-In this step you will enable audit logging in `cassandra.yaml`.
+In this step you will stop the Cassandra service, enable audit logging in `cassandra.yaml`,re-start the Cassandra service, insert some data and view the inserts in the *audit log*.
 
 ---
 <p>
@@ -12,7 +12,10 @@ Stop the Cassandra service
 service cassandra stop
 ```{{execute}}
 
-Verify that cassandra has stopped
+Verify that Cassandra has stopped
 ```
 nodetool status
 ```{{execute}}
+
+You should see a message like this:
+![Stopped](./assets/stopped.png)
