@@ -21,3 +21,5 @@ You should see a message like this:
 ![Stopped](./assets/stopped.png)
 
 Click to open the `/etc/cassandra/cassandra.yaml`{{open}} file in the editor.
+
+<pre class="file" data-filename="/etc/cassandra/cassandra.yaml">**** inserted ****</pre>
