@@ -65,11 +65,21 @@ Use *nodetool* to disable audit logging.
 nodetool disableauditlog
 ```{{execute}}
 
+Start *cqlsh*
+```
+cqlsh
+```{{execute}}
+
 Insert two songs into the *songs* table.
 ```
 use music;
 INSERT INTO songs (artist, title, year) VALUES('Elton John', 'Bennie and the Jets', 1973);
 INSERT INTO songs (artist, title, year) VALUES('Steve Miller Band', 'The Joker', 1974);
+```{{execute}}
+
+Type `exit` to close *cqlsh*.
+```
+exit
 ```{{execute}}
 
 Take another look at the audit log. Since we disabled logging the most recent inserts will not be reflected in the logs.
