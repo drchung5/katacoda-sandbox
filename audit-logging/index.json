@@ -15,15 +15,15 @@
         "text": "step1.md"
       },
       {
-        "title": "Enable Audit Logging",
+        "title": "Enable Audit Logging Dynamically",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Enable Audit Logging in cassandra.yaml",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Configuring Audit Logging",
         "text": "step4.md"
       },
       {

@@ -2,10 +2,17 @@ In this step you will use *nodetool* to dynamically enable audit logging.
 Next you will insert and update some data. 
 Finally you will view the audit log.
 
-Use *nodetool* and enable audit logging.
+Use *nodetool* to enable audit logging.
 ```
 nodetool enableauditlog
 ```{{execute}}
+
+---
+<p>
+<span style="color:teal">**Pro Tip:**</span> 
+Settings configured with *nodetool* temporarily override settings in `cassandra.yaml`. However, settings configured with *nodetool* do not persist across shutdowns.
+</p>
+---
 
 Start the CQL Shell again.
 
@@ -50,4 +57,23 @@ Ignore any Java warnings you may see.
 The log output should contain the `INSERT`, `UPDATE` and `SELECT` commands you entered along with a timestamp, username and more.
 </p>
 ---
+
 ![Daniel Log](./assets/daniel-log.png)
+
+Use *nodetool* to disable audit logging.
+```
+nodetool disableauditlog
+```{{execute}}
+
+Insert two songs into the *songs* table.
+```
+use music;
+INSERT INTO songs (artist, title, year) VALUES('Elton John', 'Bennie and the Jets', 1973);
+INSERT INTO songs (artist, title, year) VALUES('Steve Miller Band', 'The Joker', 1974);
+```{{execute}}
+
+Take another look at the audit log. Since we disabled logging the most recent inserts will not be reflected in the logs.
+
+```
+auditlogviewer /var/log/cassandra/audit
+```{{execute}}
