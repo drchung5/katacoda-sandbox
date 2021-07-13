@@ -61,11 +61,9 @@ auditlogviewer /var/log/cassandra/audit
 
 You should see the most recent query for all Elton John songs.
 
-
-
 Use *nodetool* to exclude queries from the audit logs.
 ```
-nodetool --excluded-categories QUERY
+nodetool enableauditlog --excluded-categories QUERY
 ```{{execute}}
 
 Open *cqlsh*.
