@@ -1,4 +1,4 @@
-In this step you will look at some of the configurable properties of audit logging. 
+In this step you will look at some of the configurable properties of audit logging. Then, you will demonstrate setting and unsetting one of these properties.
 
 ---
 <p>
@@ -18,3 +18,21 @@ All of these properties may be configured in `cassandra.yaml` or with *nodetool*
 - `excluded_categories`: Comma separated list of Audit Log Categories to be excluded from audit log, default - excludes no category
 - `included_users`: Comma separated list of users to be included in audit log, default - includes all users
 - `excluded_users`: Comma separated list of users to be excluded from audit log, default - excludes no user
+
+In this example you will use the `excluded categories` property to exclude queries from the audit log. 
+
+<details>
+  <summary style="color:teal">What *categories* are defined in Caasandra audit logging?</summary>
+<hr>
+# Audit Log Categories and Operations
+
+- `QUERY`: SELECT
+- `DML`: (Data Manipulation Language) UPDATE, DELETE, INSERT, BATCH
+- `DDL`: (Data Definition Language) TRUNCATE, CREATE_KEYSPACE, ALTER_KEYSPACE, DROP_KEYSPACE, CREATE_TABLE, DROP_TABLE, DROP_TRIGGER, CREATE_INDEX, DROP_INDEX, CREATE_TYPE, DROP_AGGREGATE,ALTER_VIEW, CREATE_VIEW, CREATE_FUNCTION, ALTER_TABLE, CREATE_AGGREGATE, DROP_VIEW, DROP_TYPE,DROP_FUNCTION, CREATE_TRIGGER, ALTER_TYPE
+- `DCL`: (Data Control Language) LIST_USERS, GRANT, REVOKE, DROP_ROLE, ALTER ROLE, LIST_ROLES, LIST_PERMISSIONS, CREATE_ROLE
+- `OTHER`: USE_KEYSPACE
+- `AUTH`: LOGIN_ERROR, UNAUTHORIZED_ATTEMPT, LOGIN_SUCCESS
+- `ERROR`: REQUEST_FAILURE
+- `PREPARE`: PREPARE_STATEMENT
+<hr>
+</details>
