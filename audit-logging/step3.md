@@ -62,6 +62,11 @@ Type `exit` to close *cqlsh*.
 exit
 ```{{execute}}
 
+View the audit logs.
 ```
 auditlogviewer /var/log/cassandra/audit
 ```{{execute}}
+
+You should now see that Paul Simon's *Kodachrome* has been inserted.
+
+![Kodachrome](./assets/simon.png)
