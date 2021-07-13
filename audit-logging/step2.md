@@ -70,7 +70,7 @@ Start *cqlsh*
 cqlsh
 ```{{execute}}
 
-Insert two songs into the *songs* table.
+Insert two more songs into the *songs* table.
 ```
 use music;
 INSERT INTO songs (artist, title, year) VALUES('Elton John', 'Bennie and the Jets', 1973);

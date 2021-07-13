@@ -28,7 +28,7 @@ Add the YAML configuration to enable audit logging:
 
 Re-start the Cassandra service
 ```
-service cassandra stop
+service cassandra start
 ```{{execute}}
 
 Verify that Cassandra has started
@@ -36,7 +36,14 @@ Verify that Cassandra has started
 nodetool status
 ```{{execute}}
 
-Next you will insert another row in the database and verify that the insertion shows up in the audit logs.
+---
+<p>
+<span style="color:teal">**Note:**</span> 
+You may need to run `nodetool status` a few times before Cassandra has finished the startup process.
+</p>
+---
+
+Next you will insert another song and verify that the insertion shows up in the audit logs.
 
 Open cqlsh
 ```
