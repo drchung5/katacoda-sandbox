@@ -22,4 +22,33 @@ You should see a message like this:
 
 Click to open the `/etc/cassandra/cassandra.yaml`{{open}} file in the editor.
 
-<pre class="file" data-filename="/etc/cassandra/cassandra.yaml">**** inserted ****</pre>
+<pre class="file" data-filename="/etc/cassandra/cassandra.yaml">audit_logging_options:</pre>
+<pre class="file" data-filename="/etc/cassandra/cassandra.yaml">    enabled: true</pre>
+
+cqlsh
+```{{execute}}
+
+Re-start the Cassandra service
+```
+service cassandra stop
+```{{execute}}
+
+Verify that Cassandra has started
+```
+nodetool status
+```{{execute}}
+
+Insert another song into the *songs* table.
+```
+use music;
+INSERT INTO songs (artist, title, year) VALUES('Paul Simon', 'Kodachrome', 1973);
+```{{execute}}
+
+Type `exit` to close *cqlsh*.
+```
+exit
+```{{execute}}
+
+```
+auditlogviewer /var/log/cassandra/audit
+```{{execute}}
