@@ -46,7 +46,7 @@ cqlsh
 Select Elton John songs.
 ```
 use music;
-select * from music where artist = 'Elton John';
+select * from songs where artist = 'Elton John';
 ```{{execute}}
 
 Exit *cqlsh*.
@@ -76,7 +76,7 @@ cqlsh
 Select Paul Simon songs.
 ```
 use music;
-select * from music where artist = 'Paul Simon';
+select * from songs where artist = 'Paul Simon';
 ```{{execute}}
 
 Exit *cqlsh*.
