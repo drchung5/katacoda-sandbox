@@ -22,11 +22,9 @@ You should see a message like this:
 
 Click to open the `/etc/cassandra/cassandra.yaml`{{open}} file in the editor.
 
+Add the YAML configuration to enable audit logging:
 <pre class="file" data-filename="/etc/cassandra/cassandra.yaml">audit_logging_options:</pre>
 <pre class="file" data-filename="/etc/cassandra/cassandra.yaml">    enabled: true</pre>
-
-cqlsh
-```{{execute}}
 
 Re-start the Cassandra service
 ```
@@ -37,6 +35,14 @@ Verify that Cassandra has started
 ```
 nodetool status
 ```{{execute}}
+
+Next you will insert another row in the database and verify that the insertion shows up in the audit logs.
+
+Open cqlsh
+```
+cqlsh
+```{{execute}}
+
 
 Insert another song into the *songs* table.
 ```
