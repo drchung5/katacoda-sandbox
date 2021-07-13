@@ -87,3 +87,7 @@ Take another look at the audit log. Since we disabled logging the most recent in
 ```
 auditlogviewer /var/log/cassandra/audit
 ```{{execute}}
+
+# Summary
+
+In this step, you used *nodetool* to enable and disable logging. You also used *auditlogviewer* to view the audit logs.

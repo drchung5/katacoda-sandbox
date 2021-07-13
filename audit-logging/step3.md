@@ -70,3 +70,7 @@ auditlogviewer /var/log/cassandra/audit
 You should now see that Paul Simon's *Kodachrome* has been inserted.
 
 ![Kodachrome](./assets/simon.png)
+
+# Summary
+
+In this step, you modified `cassandra.yaml` and re-started the server to enable audit logging. You then used *auditlogviewer* to verify that the operations you performed were recorded in the audit logs.

@@ -1,4 +1,4 @@
-In this step you will verify that Cassandra has been installed and is running as a service.
+In this step, you will verify that Cassandra has been installed and is running as a service.
 Next, you will connect using *cqlsh* and create a keyspace and table.
 
 During startup, this scenario uses *apt-get* to install and start a single Cassandra node running as a service.
@@ -54,3 +54,7 @@ Type `exit` to close *cqlsh*.
 ```
 exit
 ```{{execute}}
+
+# Summary
+
+In this step, you have verified that Cassandra is running and created the *music* keyspace and the *songs* table.

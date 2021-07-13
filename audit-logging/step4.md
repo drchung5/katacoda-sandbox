@@ -89,7 +89,9 @@ auditlogviewer /var/log/cassandra/audit
 
 You should see that the query for Paul Simon songs is not in the audit logs.
 
+# Summary
 
+In this step, you explored the configurable properties of audit logging. Next, you used *nodetool* to exclude *queries* from the audit logs. Then, you performed a query and used *auditlogviewer* to verify that the query was not logged.
 
 
 
