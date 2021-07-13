@@ -22,9 +22,8 @@ All of these properties may be configured in `cassandra.yaml` or with *nodetool*
 In this example you will use the `excluded categories` property to exclude queries from the audit log. 
 
 <details>
-  <summary style="color:teal">What *categories* are defined in Caasandra audit logging?</summary>
+  <summary style="color:teal">List of Audit Log Categories and Operations</summary>
 <hr>
-# Audit Log Categories and Operations
 <ul>
 <li>`QUERY`: SELECT</li>
 <li>`DML`: (Data Manipulation Language) UPDATE, DELETE, INSERT, BATCH</li>
@@ -37,3 +36,62 @@ In this example you will use the `excluded categories` property to exclude queri
 </ul>
 <hr>
 </details>
+
+
+Click to open *cqlsh*.
+```
+cqlsh
+```{{execute}}
+
+Select Elton John songs.
+```
+use music;
+select * from music where artist = 'Elton John';
+```{{execute}}
+
+Exit *cqlsh*.
+```
+exit
+```{{execute}}
+
+View the audit log.
+```
+auditlogviewer /var/log/cassandra/audit
+```{{execute}}
+
+You should see the most recent query for all Elton John songs.
+
+
+
+Use *nodetool* to exclude queries from the audit logs.
+```
+nodetool --excluded-categories QUERY
+```{{execute}}
+
+Open *cqlsh*.
+```
+cqlsh
+```{{execute}}
+
+Select Paul Simon songs.
+```
+use music;
+select * from music where artist = 'Paul Simon';
+```{{execute}}
+
+Exit *cqlsh*.
+```
+exit
+```{{execute}}
+
+View the audit log.
+```
+auditlogviewer /var/log/cassandra/audit
+```{{execute}}
+
+You should see that the query for Paul Simon songs is not in the audit logs.
+
+
+
+
+
