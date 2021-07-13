@@ -1,4 +1,13 @@
-Step 4
+In this step you will look at some of the configurable properties of audit logging. 
+
+---
+<p>
+<span style="color:teal">**Note:**</span> 
+All of these properties may be configured in `cassandra.yaml` or with *nodetool*. Properties configured in `cassandra.yaml` persist across server shutdownws. Properties configured with *nodetool* override preoperties configured in `cassandra.yaml.
+</p>
+---
+
+# Configurable Properties
 
 - `enabled`: This option enables/ disables audit log
 - `logger`: Class name of the logger/ custom logger.
