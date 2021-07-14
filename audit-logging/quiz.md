@@ -1,16 +1,18 @@
 Here is a short quiz for you. 
 
->>1. Which CQL statement can be used to add rows into a table? <<
-( ) SELECT
-( ) DELETE
-(*) INSERT
+>>1. What is valid statement about audit log configuration in Cassandra? <<
+( ) Audit log configuration set with *nodetool* persists across server restarts.
+( ) Audit log configuration set with *nodetool* applies to all nodes in a cassandra cluster.
+(*) Audit log configuration set with *nodetool* overrides configuration set in `cassandra.yaml`.
 
->>2. Which CQL statement can be used to retrieve rows from a table? <<
-(*) SELECT
-( ) DELETE
-( ) INSERT
 
->>3. Which CQL statement can be used to remove rows from a table? <<
-( ) SELECT
-(*) DELETE
-( ) INSERT
+>>2. How should you handle sensitive data when sharing audit logs? <<
+( ) Audit logs do not contain sesitive data.
+(*) Manually redact sensitive data in the audit logs.
+( ) Use *nodetool* to redact specific fieds in the audit logs.
+
+
+>>3. Which command disables the audit log for the `finance` keyspace? <<
+( ) `nodetool auditlog --ignore finance`
+( ) `nodetool auditlog --disable --keyspace finance`
+(*) `nodetool enableauditlog --excluded-keyspaces finance`
