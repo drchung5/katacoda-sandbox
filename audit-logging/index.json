@@ -1,7 +1,7 @@
 {
   "title": "Audit Logging",
   "description": "New Features in Cassandra 4",
-  "difficulty": "Beginner",
+  "difficulty": "Easy",
   "time": "15 minutes",
   "details": {
     "assets": {
