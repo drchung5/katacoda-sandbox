@@ -12,8 +12,8 @@ export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/
 
 until [ -f /usr/lib/jvm/java-8-openjdk-amd64 ]
 do
-     sleep 5
-     echo '.'
+     sleep 2
+     echo -n '.'
 done
 
 cassandra -R # /usr/share/cassandra/bin/cassandra -R
