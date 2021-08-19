@@ -1,0 +1,32 @@
+{
+    "title": "scripts",
+    "description": "General purpose environment",
+    "details": {
+      "assets": {
+        "host01": [
+            {"file": "wait.sh", "target": "/usr/local/bin", "chmod": "+x"}
+        ]
+      },
+      "steps": [
+        {
+          "title": "Step 1",
+          "text": "step1.md"
+        }
+      ],
+      "intro": {
+        "courseData": "background.sh",
+        "code": "foreground.sh",
+        "text": "intro.md"
+      },
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "environment": {
+      "hideintro": true,
+      "uilayout": "terminal"
+    },
+    "backend": {
+      "imageid": "ubuntu:1804"
+    }
+  }
