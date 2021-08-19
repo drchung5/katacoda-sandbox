@@ -6,6 +6,12 @@ do
      echo -n '.'
 done
 
+until [ -e /usr/bin/java ]
+do
+     sleep 2
+     echo -n '.'
+done
+
 # Install Cassandra 3.11.9
 echo "install Cassandra 3.11.9"
 wget https://archive.apache.org/dist/cassandra/3.11.9/apache-cassandra-3.11.9-bin.tar.gz
