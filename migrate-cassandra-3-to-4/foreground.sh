@@ -2,7 +2,7 @@
 echo "force downgrade Java to JDK 8"
 sudo rm -r /usr/lib/jvm
 apt-get update > /dev/null 2>&1
-sudo apt-get -y install openjdk-8-jdk openjdk-8-jre > /dev/null 2>&1 #< "/dev/null"
+sudo apt-get -y install openjdk-8-jdk openjdk-8-jre < "/dev/null" > /dev/null 2>&1 
 
 until [[ -e /usr/lib/jvm/java-8-openjdk-amd64 && -e /usr/bin/java ]]
 do
