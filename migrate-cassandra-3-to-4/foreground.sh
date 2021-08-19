@@ -19,7 +19,7 @@ rm apache-cassandra-3.11.9-bin.tar.gz
 export JAVA_HOME="/usr" # Casandra appends /bin/java
 export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"
 
-cassandra -R # /usr/share/cassandra/bin/cassandra -R
+cassandra -R > /dev/null 2>&1
 while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
 echo "done" >> /opt/katacoda-background-finished
 echo "*** Cassandra is set up ***"
