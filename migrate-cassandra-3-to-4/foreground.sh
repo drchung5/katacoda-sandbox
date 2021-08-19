@@ -10,7 +10,7 @@ export JAVA_HOME="/usr" # Casandra appends /bin/java
 export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"
 #sleep 2
 
-until [ -f /usr/lib/jvm/java-8-openjdk-amd64 ]
+until [ which java ]
 do
      sleep 2
      echo -n '.'
