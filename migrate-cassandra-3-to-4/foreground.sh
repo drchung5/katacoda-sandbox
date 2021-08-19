@@ -6,6 +6,7 @@ wget https://archive.apache.org/dist/cassandra/3.11.9/apache-cassandra-3.11.9-bi
 tar xzf apache-cassandra-3.11.9-bin.tar.gz
 mv apache-cassandra-3.11.9 /usr/share/cassandra
 rm apache-cassandra-3.11.9-bin.tar.gz
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 echo 'PATH="$PATH:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"' >> .bashrc
 /usr/share/cassandra/bin/cassandra -R
 while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
