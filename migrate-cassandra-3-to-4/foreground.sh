@@ -16,6 +16,8 @@ do
      echo -n '.'
 done
 
+sleep 10
+
 cassandra -R # /usr/share/cassandra/bin/cassandra -R
 while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
 echo "done" >> /opt/katacoda-background-finished
