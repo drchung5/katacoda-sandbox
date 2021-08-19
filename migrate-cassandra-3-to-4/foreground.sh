@@ -1,10 +1,5 @@
 # !/bin/bash
 
-echo "force downgradde Java to JDK 8"
-sudo rm -r /usr/lib/jvm
-apt-get update
-sudo apt-get -y install openjdk-8-jdk openjdk-8-jre
-
 # Install Cassandra 3.11.9
 echo "install Cassandra 3.11.9"
 wget https://archive.apache.org/dist/cassandra/3.11.9/apache-cassandra-3.11.9-bin.tar.gz
