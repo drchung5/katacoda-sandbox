@@ -13,6 +13,7 @@ export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/
 until [ -f /usr/bin/java ]
 do
      sleep 5
+     echo '.'
 done
 
 cassandra -R # /usr/share/cassandra/bin/cassandra -R
