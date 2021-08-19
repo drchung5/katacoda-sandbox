@@ -1,14 +1,8 @@
 # !/bin/bash
 
-until [ -e /usr/lib/jvm/java-8-openjdk-amd64 ]
-do
-     sleep 2
-     echo -n '.'
-done
-
 until [ -e /usr/bin/java ]
 do
-     sleep 2
+     sleep 1
      echo -n '.'
 done
 
