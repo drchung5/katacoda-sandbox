@@ -13,7 +13,7 @@ done
 
 # Install Cassandra 3.11.9
 echo "install Cassandra 3.11.9"
-wget https://archive.apache.org/dist/cassandra/3.11.9/apache-cassandra-3.11.9-bin.tar.gz > /dev/null 2>&1
+wget https://archive.apache.org/dist/cassandra/3.11.9/apache-cassandra-3.11.9-bin.tar.gz < "/dev/null" > /dev/null 2>&1
 tar xzf apache-cassandra-3.11.9-bin.tar.gz
 mv apache-cassandra-3.11.9 /usr/share/cassandra
 rm apache-cassandra-3.11.9-bin.tar.gz
