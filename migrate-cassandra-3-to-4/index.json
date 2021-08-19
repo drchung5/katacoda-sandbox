@@ -1,6 +1,6 @@
 {
     "title": "Migrate Cassandra 3.x -> 4.x",
-    "description": "Learn how to perform a 'zero-downtime' migration from Cassandra 3.x -> 4.x",
+    "description": "Learn how to perform 'zero-downtime' migration from Cassandra 3.x -> 4.x",
     "details": {
       "assets": {
         "host01": [
