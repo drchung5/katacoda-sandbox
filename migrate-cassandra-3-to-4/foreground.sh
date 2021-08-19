@@ -1,6 +1,6 @@
 # !/bin/bash
 
-until [ -f /usr/binjava ]
+until [ -f /usr/bin/java ]
 do
      sleep 5
 done
