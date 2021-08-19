@@ -1,5 +1,4 @@
 # !/bin/bash
-wait.sh
 
 until [[ -e /usr/lib/jvm/java-8-openjdk-amd64 && -e /usr/bin/java ]]
 do
