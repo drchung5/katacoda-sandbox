@@ -1,5 +1,5 @@
 #!/bin/bash
-set cho OFF
+set echo OFF
 #echo "force downgrade Java to JDK 8"
 sudo rm -r /usr/lib/jvm
 apt-get update > /dev/null 2>&1
