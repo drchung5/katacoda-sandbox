@@ -46,5 +46,7 @@ Confirm that areas of the application that require Strong Consistency are using 
 
 When `LOCAL_QUORUM` is used with a Replication Factor below 3, all nodes must be available for requests to start. A rolling restart using this configuration will result in full or partial unavailability while a node is *DOWN*. 
 
+---
+
 You are now ready to continue to the next step and begin the upgrade.
 
