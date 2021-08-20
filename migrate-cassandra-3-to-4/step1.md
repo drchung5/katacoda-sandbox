@@ -4,3 +4,7 @@ In this step a script running in the background is installing JDK 8 and Cassandr
 2. Install JDK 8
 3. Install Cassandra 3.11.9 and configure environment variables
 4. Start Cassandra
+
+When you see the message "Cassandra setup complete" you may continue to the next step.
+
+![Setup Complete](./assets/setup-complete.jpg)
