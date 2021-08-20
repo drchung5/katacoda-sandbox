@@ -24,12 +24,16 @@
           "text": "step3.md"
         },
         {
-          "title": "Install Cassandra 4.0",
+          "title": "Prepare to Migrate",
           "text": "step4.md"
         },
         {
-          "title": "Start New Cluster",
+          "title": "Install Cassandra 4.0",
           "text": "step5.md"
+        },
+        {
+          "title": "Start New Cluster",
+          "text": "step6.md"
         }
       ],
       "intro": {
