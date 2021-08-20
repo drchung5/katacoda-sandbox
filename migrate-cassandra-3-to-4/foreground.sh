@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Downgrade Java to JDK 8"
+echo "\n\nDowngrade Java to JDK 8\n\n"
 
 sudo rm -r /usr/lib/jvm
 apt-get update > /dev/null 2>&1
@@ -12,7 +12,7 @@ do
      echo -n '.'
 done
 
-echo "Install Cassandra 3.11.9"
+echo "\n\nInstall Cassandra 3.11.9\n\n"
 
 wget https://archive.apache.org/dist/cassandra/3.11.9/apache-cassandra-3.11.9-bin.tar.gz < "/dev/null" > /dev/null 2>&1
 tar xzf apache-cassandra-3.11.9-bin.tar.gz
@@ -21,10 +21,10 @@ rm apache-cassandra-3.11.9-bin.tar.gz
 export JAVA_HOME="/usr"
 export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"
 
-echo "Start Cassandra"
+echo "\n\nStart Cassandra\n\n"
 
 cassandra -R < "/dev/null" > /dev/null 2>&1
 
 while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
 
-echo "Cassandra setup complete"
+echo "\n\nCassandra setup complete"
