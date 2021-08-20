@@ -1,4 +1,4 @@
-In this step you will create a keyspace and a table and populate them with some data.
+In this step, you will create a keyspace and a table and populate them with some data.
 
 Click to start a CQL shell (cqlsh) to execute CQL commands in the cluster.
 ```

@@ -1,4 +1,4 @@
-In this step we will prepare the Cassandra 3.x cluster before performing the upgrade. There are 9 factors to consider:
+In this step, we will prepare the Cassandra 3.x cluster before performing the upgrade. There are 9 factors to consider:
 
 **Current State**
 All nodes in the cluster need to be in an ‘Up and Normal’ state. Check that there are no nodes in the cluster that are in a state different to *Up and Normal*. This command will list any nodes not in the *UN* state.
