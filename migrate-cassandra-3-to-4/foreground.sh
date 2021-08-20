@@ -1,5 +1,4 @@
 #!/bin/bash
-wait.sh
 
 # echo "force downgrade Java to JDK 8"
 sudo rm -r /usr/lib/jvm
