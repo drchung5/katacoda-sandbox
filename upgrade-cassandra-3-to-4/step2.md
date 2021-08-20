@@ -59,9 +59,10 @@ Retrieve all the cities in California.
 SELECT * FROM cities_by_state WHERE state = 'California';
 ```{{execute T1}}
 
-Exit the CQL shell.
+Exit the CQL shell and clear the screen.
 ```
 exit
+clear
 ```{{execute T1}}
 
 You have loaded the data, continue to the next step.
