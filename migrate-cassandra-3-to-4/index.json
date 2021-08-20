@@ -1,6 +1,6 @@
 {
     "private": false,
-    "title": "Background - Migrate Cassandra 3.x -> 4.x",
+    "title": "Migrate Cassandra 3.x -> 4.x",
     "description": "Learn how to perform 'zero-downtime' migration from Cassandra 3.x -> 4.x",
     "difficulty": "Intermediate",
     "time": "20 minutes",
