@@ -9,8 +9,24 @@
       },
       "steps": [
         {
-          "title": "Step 1",
+          "title": "Cassandra 3.11.9 Cluster",
           "text": "step1.md"
+        },
+        {
+          "title": "Data",
+          "text": "step2.md"
+        },
+        {
+          "title": "Prepare to Migrate",
+          "text": "step3.md"
+        },
+        {
+          "title": "Install Cassandra 4.0",
+          "text": "step4.md"
+        },
+        {
+          "title": "Start New Cluster",
+          "text": "step5.md"
         }
       ],
       "intro": {
