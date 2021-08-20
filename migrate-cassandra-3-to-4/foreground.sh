@@ -1,6 +1,6 @@
-# !/bin/bash
+#!/bin/bash
 echo OFF
-echo "force downgrade Java to JDK 8"
+#echo "force downgrade Java to JDK 8"
 sudo rm -r /usr/lib/jvm
 apt-get update > /dev/null 2>&1
 sudo apt-get -y install openjdk-8-jdk openjdk-8-jre < "/dev/null" > /dev/null 2>&1 
