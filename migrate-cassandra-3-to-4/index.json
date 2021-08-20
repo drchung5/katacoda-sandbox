@@ -9,7 +9,7 @@
       },
       "steps": [
         {
-          "title": "Cassandra 3.11.9 Cluster",
+          "title": "Create a Cassandra 3.11.9 Cluster",
           "text": "step1.md"
         },
         {
