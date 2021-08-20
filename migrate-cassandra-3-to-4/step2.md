@@ -5,15 +5,17 @@ Click to start a CQL shell (cqlsh) to execute CQL commands in the cluster.
 cqlsh
 ```{{execute T1}}
 
-Create a keysace.
+Create a keyspace.
 ```
 CREATE KEYSPACE united_states WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 ```{{execute T1}}
 
+Use the keyspace.
 ```
 USE united_states;
 ```{{execute T1}}
 
+Create the table.
 ```
 CREATE TABLE cities_by_state(
     state text,
@@ -23,6 +25,7 @@ CREATE TABLE cities_by_state(
 );
 ```{{execute T1}}
 
+Insert the top 10 (by population) cities in the United States.
 ```
 INSERT INTO cities_by_state (state, name, population) 
   VALUES ('New York','New York City',8622357);
@@ -46,10 +49,14 @@ INSERT INTO cities_by_state (state, name, population)
   VALUES ('California','San Jose',1036242);
 ```{{execute T1}}
 
+Verify that the data has been loaded.
 ```
 SELECT * FROM cities_by_state;
 ```{{execute T1}}
 
+Retrieve all the cities in California.
 ```
 SELECT * FROM cities_by_state WHERE state = 'California';
 ```{{execute T1}}
+
+You have loaded the data, continue to the next step.

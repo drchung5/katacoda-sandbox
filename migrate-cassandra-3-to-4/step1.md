@@ -5,6 +5,16 @@ In this step a script running in the background is installing JDK 8 and Cassandr
 3. Install Cassandra 3.11.9 and configure environment variables
 4. Start Cassandra
 
-When you see the message *Cassandra setup complete* you may continue to the next step.
+Wait until you see the message *Cassandra setup complete*.
 
 ![Setup Complete](./assets/setup-complete.jpg)
+
+Click to verify that the Cassandra version is 3.11.9.
+```
+nodetool version
+```{{execute T1}}
+
+You should see the correct version.
+![Version 3.11.9]((./assets/version.png))
+
+After verifying the version, you may continue to the next step.
