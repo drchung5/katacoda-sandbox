@@ -15,6 +15,6 @@ nodetool version
 ```{{execute T1}}
 
 You should see the correct version.
-![Version 3.11.9]((./assets/version.png))
+![Version 3.11.9](./assets/version.png)
 
 After verifying the version, you may continue to the next step.
