@@ -1,5 +1,5 @@
 #!/bin/bash
-echo OFF
+set cho OFF
 #echo "force downgrade Java to JDK 8"
 sudo rm -r /usr/lib/jvm
 apt-get update > /dev/null 2>&1
@@ -17,4 +17,4 @@ export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/
 cassandra -R < "/dev/null" > /dev/null 2>&1
 while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
 echo "*** Cassandra is set up ***"
-echo ON
+set echo ON
