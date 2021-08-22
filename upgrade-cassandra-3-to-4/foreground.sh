@@ -21,6 +21,11 @@ rm apache-cassandra-3.11.9-bin.tar.gz
 export JAVA_HOME="/usr"
 export PATH="$PATH:/usr/bin:/usr/share/cassandra/bin:/usr/share/cassandra/tools/bin"
 
+# set vnode count to 16
+sed 's/num_tokens: 256/num tokens: 16' /usr/share/cassandra/conf/cassandra.yaml > temp.yaml
+mv /usr/share/cassandra/conf/cassandra.yaml /usr/share/cassandra/conf/cassandra-old.yaml
+mv temp.yaml /usr/share/cassandra/conf/cassandra.yaml
+
 echo "Start Cassandra"
 
 cassandra -R < "/dev/null" > /dev/null 2>&1

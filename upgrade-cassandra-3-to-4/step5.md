@@ -27,3 +27,6 @@ while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/sys
 
 echo "Cassandra setup complete"
 ```{{execute T1}}
+
+/usr/share/cassandra/data/data
+num_tokens: 256
