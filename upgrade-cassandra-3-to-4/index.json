@@ -20,11 +20,11 @@
           "text": "step2.md"
         },
         {
-          "title": "Prepare to Migrate",
+          "title": "Verify that the Cluster is Ready to Upgrade",
           "text": "step3.md"
         },
         {
-          "title": "Prepare to Migrate",
+          "title": "Prepare the 3.x Cluster for Migration",
           "text": "step4.md"
         },
         {
