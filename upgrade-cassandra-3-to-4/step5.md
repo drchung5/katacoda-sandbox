@@ -1,15 +1,29 @@
-wget https://archive.apache.org/dist/cassandra/4.0.0/apache-cassandra-4.0.0-bin.tar.gz < "/dev/null" > /dev/null 2>&1
+```
+wget https://archive.apache.org/dist/cassandra/4.0.0/apache-cassandra-4.0.0-bin.tar.gz
+```{{execute T1}}
 
+```
 tar xzf apache-cassandra-4.0.0-bin.tar.gz
+```{{execute T1}}
+
+```
 mv apache-cassandra-4.0.0 /usr/share/cassandra4
+```{{execute T1}}
+
+```
 rm apache-cassandra-4.0.0-bin.tar.gz
-export JAVA_HOME="/usr"
+```{{execute T1}}
+
+```
 export PATH="/usr/bin:/usr/share/cassandra4/bin:/usr/share/cassandra4/tools/bin:$PATH"
+```{{execute T1}}
 
-echo "Start Cassandra"
+```
+cassandra -R
+```{{execute T1}}
 
-cassandra -R < "/dev/null" > /dev/null 2>&1
-
+```
 while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
 
 echo "Cassandra setup complete"
+```{{execute T1}}
