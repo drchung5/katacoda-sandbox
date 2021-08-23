@@ -19,7 +19,7 @@ export PATH="/usr/bin:/usr/share/cassandra4/bin:/usr/share/cassandra4/tools/bin:
 ```{{execute T1}}
 
 ```
-sed -i 's/num_tokens: 256/num tokens: 16/' /usr/share/cassandra4/conf/cassandra.yaml
+sed -i 's/num_tokens: 256/num_tokens: 16/' /usr/share/cassandra4/conf/cassandra.yaml
 ```{{execute T1}}
 
 ```
