@@ -5,11 +5,7 @@ nodetool snapshot
 ```{{execute T1}}
 
 ```
-ps auwx | grep cassandra
-```{{execute T1}}
-
-```
-kill [[pid]]
+pgrep -u root -f cassandra | xargs kill -9
 ```{{execute T1}}
 
 ```
