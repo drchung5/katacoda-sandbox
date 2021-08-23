@@ -1,5 +1,5 @@
 ```
-nodetool -version
+nodetool version
 ```{{execute T1}}
 
 ```
