@@ -48,5 +48,8 @@ When `LOCAL_QUORUM` is used with a Replication Factor below 3, all nodes must be
 
 ---
 
-You are now ready to continue to the next step and begin the upgrade.
+```
+clear
+```{{execute T1}}
 
+You are now ready to continue to the next step and begin the upgrade.

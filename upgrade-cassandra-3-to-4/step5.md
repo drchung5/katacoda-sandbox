@@ -28,12 +28,5 @@ sed -i 's/#     - \/var\/lib\/cassandra\/data/    - \/usr\/share\/cassandra\/dat
 ```{{execute T1}}
 
 ```
-cassandra -R
-
-while [ `grep "Starting listening for CQL clients" /usr/share/cassandra/logs/system.log | wc -l` -lt 1 ]; do sleep 10; done
-
-echo "Cassandra setup complete"
+clear
 ```{{execute T1}}
-
-/usr/share/cassandra/data/data
-num_tokens: 256

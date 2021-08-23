@@ -32,8 +32,12 @@
           "text": "step5.md"
         },
         {
-          "title": "Start New Cluster",
+          "title": "Start New Node",
           "text": "step6.md"
+        },
+        {
+          "title": "Verify New Node",
+          "text": "step7.md"
         }
       ],
       "intro": {
