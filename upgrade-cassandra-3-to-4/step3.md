@@ -1,7 +1,7 @@
 In this step, we will verify that the Cassandra 3.x cluster is ready to be upgraded. There are 9 factors to consider:
 
 **Current State**
-All nodes in the cluster need to be in an ‘Up and Normal’ state. Check that there are no nodes in the cluster that are in a state different to *Up and Normal*. This command will list any nodes not in the *UN* state.
+All nodes in the cluster need to be in an ‘Up and Normal’ state. Check that there are no nodes in the cluster that are in a state different to *Up and Normal*. This command will list any nodes **not** in the *UN* state.
 ```
 nodetool status | grep -v UN
 ```{{execute T1}}
