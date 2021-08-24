@@ -16,6 +16,9 @@ Start the Cassandra 4.x server.
 cassandra -R
 ```{{execute T1}}
 
+Look for the message, *state jump to NORMAL* to indicate that the server is running.
+![Version 3.11.9](./assets/normal.jpg)
+
 Clear the screen and continue.
 ```
 clear
