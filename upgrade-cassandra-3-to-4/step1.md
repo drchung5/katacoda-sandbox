@@ -17,4 +17,7 @@ nodetool version
 You should see the correct version.
 ![Version 3.11.9](./assets/version.png)
 
-After verifying the version, you may continue to the next step.
+After verifying the version, clear the screen and continue to the next step.
+```
+clear
+```{{execute T1}}

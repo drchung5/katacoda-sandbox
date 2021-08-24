@@ -48,6 +48,7 @@ When `LOCAL_QUORUM` is used with a Replication Factor below 3, all nodes must be
 
 ---
 
+Clear the screen.
 ```
 clear
 ```{{execute T1}}
