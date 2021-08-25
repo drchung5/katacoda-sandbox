@@ -12,7 +12,7 @@ pgrep -u root -f cassandra | xargs kill -9
 
 Use nodetool to verify that the server has been shut down.
 ```
-nodetoll status
+nodetool status
 ```{{execute T1}}
 
 Clear the screen and continue.
